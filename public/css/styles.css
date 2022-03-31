@@ -1,0 +1,32 @@
+/* LOGIN */
+.container-login {
+    width: 25%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-login, .form-container {
+    width: 100%;
+}
+.login-input:focus{
+    outline: none !important;
+}
+.btn-social.btn-auth {
+    width: 60%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin: auto;
+}
+.logo-login {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+@media (max-width: 500px) {
+    .container-login {
+        width: 100%;
+    }
+}
