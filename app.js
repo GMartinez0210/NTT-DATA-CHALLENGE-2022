@@ -21,6 +21,11 @@ app.route("/")
         res.redirect("/login")
     })
 
+app.route("/chatBot")
+    .get(function(req, res) {
+        res.render("chatbot")
+    })
+
 app.listen(process.env.PORT || 3000, function() {
     console.log("Server's running on port 3000")
 })
