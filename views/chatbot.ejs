@@ -1,0 +1,54 @@
+<%- include('partials/header') -%>
+
+    <div class="container mt-5 mb-5">
+        <main class="chat-bot">
+            <section class="chat-section d-flex gap-4">
+                <div class="chat chat--left">
+                    <div class="chat-avatar">
+                        <img src="/images/robot 1 (1).svg" alt="bot">
+                    </div>
+
+                    <div class="chat-message">
+                        <p>
+                            Hola, soy DocBot. Fui programado para quitarte la duda si debes ver a un médico con urgencia o no. Espero ayudarte! :D
+                        </p>
+                    </div>
+                </div>
+
+                <div class="chat chat--left">
+                    <div class="chat-avatar">
+                        <img src="/images/robot 1 (1).svg" alt="bot">
+                    </div>
+
+                    <div class="chat-message">
+                        <p> ¿Qué síntomas padeces? <p>
+                    </div>
+                </div>
+            </section>
+            <section class="send-message p-3">
+                <form id="options" class="sm-table pt-2 pb-2 m-auto">
+                    <div class="p-2 d-flex flex-wrap gap-4">
+                        <div class="d-flex flex-shink-0 gap-3">
+                            <button id="option1" type="submit" class="sm-option" value=""></button>
+                            <button id="option2" type="submit" class="sm-option" value=""></button>
+                            <button id="otros" type="submit" class="sm-option sm-otros" value="otros">Otros</button>
+                        </div>
+                        
+                        <div id="btns-si-no" class="noshow d-flex - flex-shink-0 gap-4 justify-evently">
+                            <button id="btn-si" type="submit" class="sm-option sm-option" value="true">Si</button>
+                            <button id="btn-no" type="submit" class="sm-option sm-otros" value="false">No</button>
+                        </div>
+
+                        <div class="mx-auto">
+                            <button id="noSintomas" type="submit" class="sm-option sm-end noshow" value="No tengo más síntomas">No tengo más síntomas</button>
+                        </div>
+
+                        <div class="mx-auto">
+                            <button id="again" type="submit" class="sm-option sm-end noshow">Volver a consultar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+<%- include('partials/footer') -%>
