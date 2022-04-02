@@ -2,17 +2,17 @@
 
     <div class="container container-login">
         <main class="form-container">
-            <form class="form-login text-center">
+            <form action="/login" method="post" class="form-login text-center">
                 <img class="mb-4 logo-login" src="/images/DocBot.png" alt="$Logo" width="72" height="57">
                 
                 <div class="text-start mb-3">
                     <label for="loginEmail" class="form-label label-login">Email</label>
-                    <input type="email" class="form-control input-login" id="loginEmail" placeholder="example@gmail.com">
+                    <input name="username" type="email" class="form-control input-login" id="loginEmail" placeholder="example@gmail.com">
                 </div>
 
                 <div class="text-start mb-3">
                     <label for="loginPassword" class="form-label label-login">Password</label>
-                    <input type="password" class="form-control input-login" id="loginPassword" placeholder="**********">
+                    <input name="password" type="password" class="form-control input-login" id="loginPassword" placeholder="**********">
                 </div>
 
                 <button class="mx-auto mt-5 w-50 btn btn-lg btn-login" type="submit">Ingresar</button>
@@ -28,7 +28,7 @@
                     </a>
                 </div>
                 <div class="col mt-3">
-                    <a class="px-3 btn btn-md btn-invitado btn-auth" href="/" role="button">
+                    <a class="px-3 btn btn-md btn-invitado btn-auth" href="/invitado" role="button">
                         <i class="fa-solid fa-user"></i>
                         <span>Ingresa como Invitado</span>
                     </a>
